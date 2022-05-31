@@ -6,5 +6,11 @@ import { Component } from "@angular/core";
  templateUrl: './server.component.html'
 })
 export class ServerComponent{
+  Id: number = 10;
+  status: string = 'online';
 
+  //or using get method
+  getstatus() {
+    return this.status;
+  }
 }
